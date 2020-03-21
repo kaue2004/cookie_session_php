@@ -1,7 +1,7 @@
 <form action="" method="post"> 
     <input type="text" name="" $user>
      <input type="password" name="" $login> 
-     <button>Salvar dados</button>
+     <button>Salvar dados em cookie</button>
       </form> 
   <?php 
   $user;
