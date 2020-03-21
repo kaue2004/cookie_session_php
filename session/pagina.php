@@ -4,9 +4,11 @@
 
 	##CASO NÃO EXISTA SESSÃO RETORNA A PAGINA DE LOGIN.
 	if(!isset($_SESSION['password']) == true){
-        
+         
 		unset($_SESSION['password']);
         header("Location:index.php");
     }    
-        echo "Você foi logado com sucesso"
+     
+        echo "O usuario: ".$_SESSION['username']."<br/>";
+        echo "Foi logado com sucesso!"
 ?>
