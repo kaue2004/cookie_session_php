@@ -2,7 +2,7 @@
 
 	session_start(); 
 	
-	if(isset($_SESSION['password']) == true){
+	if(isset($_SESSION['username']) == true){
 
 		header("Location: pagina.php");
 
@@ -17,10 +17,13 @@
 
 	
 	<?php
+    session_start();
 
 		if(isset($_POST['env'])){
 			
-			$password = $_POST['password'];
+            $password = $_POST['password'];
+            $user=$_POST['user'];
+            $_SESSION['username']=$user;
 
 			if( $password == $_POST['password'] ){
 
